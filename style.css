@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+    background-color:#35374B;
+    font-family: "Anta", sans-serif;
+}
+header{
+    text-align: center;
+    margin:10px;
+    color:#F7418F;
+text-shadow:rgba(48, 14, 32, 0.9) 0px 1px 3px;;
+font-size: 30px;
+transition: 0.4s ease-in-out;
+}
+header:hover{
+    color:white;
+    text-decoration: underline;
+}
+.navbar{
+    width:100%;
+    height:2vh;
+}
+.link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.link li{
+    margin-top: 30px;
+    list-style: none;
+}
+.link li a{
+    text-decoration: none;
+    color:#EB6440;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+   
+
+}
+.link li a:hover{
+    box-shadow:0 0 5px #0ebac6,
+    0 0 25px #0ebac6,0 0 50px #0ebac6,
+    0 0 100px #0ebac6,0 0 200px #0ebac6;
+    border-radius: 5px;
+ 
+}
+.expenses ul li{
+    list-style: none;
+}
+.display{
+    display: flex;
+    width:80%;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid black; */
+    border-radius: 5px;
+     position: absolute;
+    top:30vh;
+    left:100px;
+    box-shadow: rgba(48, 14, 32, 0.9) 0px 1px 3px;
+    list-style: none;
+}
+
+.ADD{
+    text-align: center;
+    font-size: 30px;
+    color:#F7418F;
+    position: relative;
+    margin: 5px;
+    /* top:15vh; */
+}
+input{
+width:200px;
+height:30px;
+border: 1px solid black;
+border-radius: 5px;
+background: #949494;
+}
+input::placeholder{
+ 
+   color:rgb(27, 23, 23);
+
+   letter-spacing: 2px;
+   font-weight: 100;
+}
+label{
+  margin:10px;
+  display: inline-block;
+  font-size: 16px;
+  width:200px;
+  height:30px;
+  background-color: aqua;
+  text-align: center;
+  padding:5px;
+  border-radius: 5px;
+}
+.add_button{
+ 
+    width:100px;
+    text-align: center;
+    height:40px;
+    padding:5px;
+border:3px solid black;
+    background-color:rgb(90, 92, 92);
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.4s ease-in-out;
+    color: black;
+    font-weight: 700;
+}
+.add_button:hover{
+    background: white;
+    border: 2px solid rgb(210, 202, 202);
+    color: #060101;
+}
+.show_data{
+height: 3rem;
+position: relative;
+top:10vh;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: rgba(48, 14, 32, 0.9) 0px 1px 3px;
+list-style: none;
+color:#F9E8D9;
+/* border-bottom: 1px solid red; */
+
+}
+.show_data span{
+  
+    padding:50px;
+    font-size: 20px;
+}
+button{
+    display: inline-block;
+    width:70px;
+    height:40px;
+    color:red;
+    background-color: rgb(7, 5, 1);
+    margin:50px ;
+    border-radius:10px ;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+}
+button:hover{
+    box-shadow: rgba(215, 6, 118, 4) 0px 1px 3px;
+    color:rgb(255, 251, 251);
+    background-color:#BE3144;
+}
+.Edit_box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:10vh;
+}
+
+
+.Total_amount{
+    position: relative;
+    margin-top: 200px;
+    font-size: 25px;
+    color:#836FFF;
+}
